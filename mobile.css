@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Pattaya&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Farro&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.80), rgba(0, 0, 0, 0.80)) , url(photo-1603302576837-37561b2e2302.jpg);
+  overflow: hidden;
+  background-repeat: repeat;
+ height: 1000px;
+
+}
+
+.logo {
+  font-family: Pattaya;
+  float: left;
+  margin-top: 30px;
+  margin-left: 30px;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 35px;
+  color: white;
+  z-index: 1;
+  position: absolute;
+  text-decoration: underline white 3px;
+}
+
+.leftbar {
+  display: none;
+  height: 100vh;
+  width: 260px;
+  background-color: red;
+  float: left;
+}
+
+nav li a {
+  text-decoration: none;
+}
+
+.menu {
+  float: right;
+  background-color: red;
+  border-bottom-left-radius: 10px;
+}
+.menu li a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-family: montserrat;
+  font-size: 18px;
+  padding: 10px;
+  overflow: hidden;
+  transition: 0.7s all;
+  position: relative;
+ text-align: center;
+  display: block;
+}
+
+.menu li a:last-child {
+  margin-bottom: 20px;
+}
+.menu li a::before {
+  content: "";
+  width: 50%;
+  border-bottom: 3px solid rgb(0, 0, 0);
+  bottom: 0;
+  right: 300px;
+  transition: 0.7s all;
+  position: absolute;
+}
+.menu li a:hover::before {
+  right: 60px;
+}
+.menu li {
+  list-style: none;
+  display: block;
+}
+
+.img {
+ 
+  float: none;
+  position: absolute;
+  
+  margin-left: 5%;
+  margin-top: -10%;
+  padding: 2px;
+}
+
+.img img {
+  position: absolute;
+  border-radius: 20px;
+  height: 300px;
+  top:14em ;
+  left: -30px;
+}
+
+.content {
+  color: white;
+  font-family: Poppins, sans-serif;
+  position: absolute;
+  /* bottom: 41%; */
+  top: 40%;
+  bottom: 10%;
+  left: 40%;
+  right: 5%;
+}
+
+.content h1 {
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+
+span {
+  font-family: Farro;
+}
+
+.btn {
+  
+  height: 120px;
+  width: 500px;
+  position: absolute;
+
+ top: 500px;
+  left: 50px;
+}
+
+.icon {
+  width: 80px;
+  height: 80px;
+  margin-right: 20px;
+  background-color: rgba(255, 255, 255, 0.281);
+  float: left;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: transform 0.5s;
+}
+
+.icon a {
+  top: 0;
+ 
+  position: absolute;
+  
+  left: 0;
+  background-color: rgba(255, 0, 0, 0.644);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: 0.5s;
+  border-radius: 40px;
+}
+
+.icon a:hover {
+  opacity: 1;
+}
+.icon:hover {
+  transform: translateY(-5px);
+}
